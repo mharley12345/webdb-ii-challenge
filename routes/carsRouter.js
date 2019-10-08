@@ -47,4 +47,16 @@ router.get('/:id',(req,res)=>{
         res.status(500).json({message:error})
     })
     })
+
+
+    // router.put("/:id", (req,res) =>{
+    //      const vin = req.params.VIN;
+    //      const updatedData = req.body;
+
+    //      knex('cars')
+    //      .where({VIN:vin})
+    //      .update(updatedData)
+    //      .then(updatedAccount => res.status(200).json({data: updatedAccount}))
+    //      .catch(err => res.status(500).json( err ))
+    // })
 module.exports = router
